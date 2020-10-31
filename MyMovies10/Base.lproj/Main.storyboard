@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMovies10" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9qc-fm-b8Q">
+                                <rect key="frame" x="83" y="-1" width="730" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IaC-f8-hlg">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="416"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dec-af-8TX">
+                                                <rect key="frame" x="13" y="52" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer1.png"/>
+                                                <connections>
+                                                    <segue destination="Yyh-E0-0Fl" kind="show" identifier="first" id="4tt-uX-yTq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dec-af-8TX" firstAttribute="centerY" secondItem="IaC-f8-hlg" secondAttribute="centerY" id="7Cq-ZR-XXT"/>
+                                            <constraint firstItem="dec-af-8TX" firstAttribute="leading" secondItem="IaC-f8-hlg" secondAttribute="leading" constant="13" id="SXj-Kh-8v3"/>
+                                            <constraint firstItem="dec-af-8TX" firstAttribute="centerX" secondItem="IaC-f8-hlg" secondAttribute="centerX" id="hj9-Ov-liD"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dR-1V-InZ">
+                                        <rect key="frame" x="245" y="0.0" width="240" height="416"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1a-sd-ORC">
+                                                <rect key="frame" x="13" y="52" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer2.png"/>
+                                                <connections>
+                                                    <segue destination="Yyh-E0-0Fl" kind="show" identifier="second" id="t9z-D2-vGF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="g1a-sd-ORC" firstAttribute="centerX" secondItem="4dR-1V-InZ" secondAttribute="centerX" id="6V6-ap-Rbx"/>
+                                            <constraint firstItem="g1a-sd-ORC" firstAttribute="centerY" secondItem="4dR-1V-InZ" secondAttribute="centerY" id="VxB-FH-8uH"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egs-eP-hei">
+                                        <rect key="frame" x="490" y="0.0" width="240" height="416"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wow-K4-2xd">
+                                                <rect key="frame" x="13" y="52" width="214" height="312"/>
+                                                <state key="normal" backgroundImage="trailer3.png"/>
+                                                <connections>
+                                                    <segue destination="Yyh-E0-0Fl" kind="show" identifier="third" id="9rH-rx-8I6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="wow-K4-2xd" firstAttribute="centerY" secondItem="egs-eP-hei" secondAttribute="centerY" id="kQA-Eq-pMb"/>
+                                            <constraint firstItem="wow-K4-2xd" firstAttribute="centerX" secondItem="egs-eP-hei" secondAttribute="centerX" id="lvq-cI-GWF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4dR-1V-InZ" firstAttribute="centerX" secondItem="9qc-fm-b8Q" secondAttribute="centerX" id="eiZ-wn-dWb"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9qc-fm-b8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="5KB-21-Lu6"/>
+                            <constraint firstItem="9qc-fm-b8Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-1" id="Inu-V3-f3X"/>
+                            <constraint firstItem="9qc-fm-b8Q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jUC-hy-fzM"/>
+                            <constraint firstItem="9qc-fm-b8Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jio-SE-fcQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.625" y="60.869565217391312"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="6SN-79-wIw">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Yyh-E0-0Fl" customClass="PlayerViewController" customModule="MyMovies10" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fPY-C7-hYL"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgK-3d-PHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="997"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="t9z-D2-vGF"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="trailer1.png" width="214" height="312"/>
+        <image name="trailer2.png" width="214" height="312"/>
+        <image name="trailer3.png" width="214" height="312"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
